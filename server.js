@@ -120,11 +120,9 @@ app.delete("/api/items/:id", async (req, res) => {
 });
 
 
-// ----------------------------------------------------------------
 // --- User Orders & Personal Collection Routes ---
-// ----------------------------------------------------------------
 
-// (৫.১) POST User Purchase - ইউজার প্রোডাক্ট বাই করলে কালেকশনে সেভ হবে
+// (৫.১) POST User Purchase -
 app.post("/api/user-collection", async (req, res) => {
   const { userEmail, itemId, title, shortDescription, price, imageUrl } = req.body;
 
@@ -149,7 +147,7 @@ app.post("/api/user-collection", async (req, res) => {
   }
 });
 
-// (৫.২) GET User Private Collection - নির্দিষ্ট লগইন করা ইউজারের কালেকশন ফিল্টার করা
+// (৫.২) GET User Private Collection - 
 app.get("/api/user-collection", async (req, res) => {
   const { email } = req.query;
 
