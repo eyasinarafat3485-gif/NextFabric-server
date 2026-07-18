@@ -194,7 +194,7 @@ app.patch("/api/admin/orders/:id/confirm", async (req, res) => {
   }
 });
 
-// (৬.৩) DELETE Order - অ্যাডমিন অর্ডার বাতিল/ডিলিট করা
+// (৬.৩) DELETE Order - 
 app.delete("/api/admin/orders/:id", async (req, res) => {
   const { id } = req.params;
   try {
