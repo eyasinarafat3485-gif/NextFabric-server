@@ -68,12 +68,9 @@ app.use(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-
-// ----------------------------------------------------------------
 // --- Custom Product Routes (Catalog Management) ---
-// ----------------------------------------------------------------
 
-// (৩) GET Items (Public) - শপ পেজের জন্য সব আইটেম রিড করা
+// (৩) GET Items (Public) -
 app.get("/api/items", async (req, res) => {
   try {
     const items = await Item.find().sort({ createdAt: -1 });
