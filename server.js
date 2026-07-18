@@ -164,11 +164,9 @@ app.get("/api/user-collection", async (req, res) => {
 });
 
 
-// ----------------------------------------------------------------
 // --- Admin Order Management Routes ---
-// ----------------------------------------------------------------
 
-// (৬.১) GET All Orders - অ্যাডমিন ড্যাশবোর্ডে সব ইউজারের অর্ডার ফেচ করা
+// (৬.১) GET All Orders -
 app.get("/api/admin/orders", async (req, res) => {
   try {
     const orders = await UserCollection.find().sort({ createdAt: -1 });
@@ -178,7 +176,7 @@ app.get("/api/admin/orders", async (req, res) => {
   }
 });
 
-// (৬.২) PATCH Confirm Order - অ্যাডমিন অর্ডার পেন্ডিং থেকে কনফার্ম করা
+// (৬.২) PATCH Confirm Order - 
 app.patch("/api/admin/orders/:id/confirm", async (req, res) => {
   const { id } = req.params;
   try {
