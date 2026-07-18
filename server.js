@@ -80,7 +80,7 @@ app.get("/api/items", async (req, res) => {
   }
 });
 
-// (২) POST Item - ড্যাশবোর্ড থেকে নতুন প্রোডাক্ট আপলোড করা
+// (২) POST Item -
 app.post("/api/items", async (req, res) => {
   const { title, shortDescription, fullDescription, price, imageUrl, tags } = req.body;
 
