@@ -108,7 +108,7 @@ app.post("/api/items", async (req, res) => {
   }
 });
 
-// (৪) DELETE Item - ইনভেন্টরি থেকে প্রোডাক্ট ডিলিট করা
+// (৪) DELETE Item 
 app.delete("/api/items/:id", async (req, res) => {
   const { id } = req.params;
   try {
